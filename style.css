@@ -1112,12 +1112,8 @@ body {
   }
   
   .remote-container {
-    left: 42%;
-  }
-  
-  .answer-container {
-    top: 55%;
-    transform: scale(0.9);
+    left: 18%;
+    top: 67%;
   }
 
 }
