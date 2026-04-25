@@ -1102,16 +1102,14 @@ body {
 @media (max-width: 768px) {
   body {
     transform: scale(0.5);
-    transform-origin: center; 
-    width: 200vw;                  
-    height: 100vh;  
-    margin-left: -100vw;             
+    transform-origin: center;               
     margin: 0 auto;               
     overflow: hidden;             
     position: absolute;          
-    left: -50%;                 
+    left: -50%;                  
     right: -50%;
   }
+  
 }
 
 
