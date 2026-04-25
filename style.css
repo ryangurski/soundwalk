@@ -14,7 +14,6 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 1200px;
     min-height: 100vh;
     margin: 0 auto;
     padding: 0;
@@ -751,6 +750,7 @@ body {
         left: 58px;
     }
     50% {
+        top: 201%;
         transform: rotate(15deg);
         left: -60px;
     }
@@ -1098,6 +1098,8 @@ body {
     font-style: normal;
     cursor: pointer;
 }
+
+
 
 
 
