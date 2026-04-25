@@ -1099,6 +1099,7 @@ body {
     cursor: pointer;
 }
 
+
 @media (max-width: 768px) {
   body {
     transform: scale(0.5);
@@ -1110,6 +1111,15 @@ body {
     right: -50%;
   }
   
+  .remote-container {
+    left: 42%;
+  }
+  
+  .answer-container {
+    top: 55%;
+    transform: scale(0.9);
+  }
+
 }
 
 
