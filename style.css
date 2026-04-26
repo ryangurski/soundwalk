@@ -619,58 +619,89 @@ body {
 
 
 @keyframes head {
-    0%, 100% { top: 0px; transform: rotate(0deg); }
+    0% { top: 0px; transform: rotate(0deg); }
     50% { top: 5px; transform: rotate(3.5deg); }
+    100% { top: 0px; transform: rotate(0deg); }
 }
 
 @keyframes hood {
-    0%, 100% { top: 70%; left: 117%; transform: translate(-50%, -50%) rotate(0deg); }
-    50% { top: 77%; left: 117.5%; transform: translate(-50%, -50%) rotate(3deg); }
+    0% { top: 70%; left: 117%; transform: translate(-50%, -50%) rotate(0deg); }
+    50% { transform: translate(-49.5%, -43%) rotate(3deg); }
+    100% { top: 70%; left: 117%; transform: translate(-50%, -50%) rotate(0deg); }
 }
 
 @keyframes hoodie-body {
-    0%, 100% { top: 55%; left: 50%; transform: translate(-50%, -50%) rotate(0deg); }
-    50% { top: 60%; left: 50%; transform: translate(-50%, -50%) rotate(1.5deg); }
+    0% { top: 55%; left: 50%; transform: translate(-50%, -50%) rotate(0deg); }
+    50% { transform: translate(-50%, -45%) rotate(1.5deg); }
+    100% { top: 55%; left: 50%; transform: translate(-50%, -50%) rotate(0deg); }
 }
 
 @keyframes hair {
-    0%, 100% { top: 3%; transform: rotate(15deg); }
+    0% { top: 3%; transform: rotate(15deg); }
     50% { top: 7%; transform: rotate(23deg); }
+    100% { top: 3%; transform: rotate(15deg); }
 }
 
 @keyframes walk-left-arm {
-    0%, 100% { right: 22px; transform: rotate(33deg); }
-    50% { right: -22px; transform: rotate(-33deg); }
+    0% { right: 22px; transform: rotate(33deg); }
+    50% { transform: translateX(44px) rotate(-33deg); }
+    100% { right: 22px; transform: rotate(33deg); }
 }
 
 @keyframes walk-right-arm {
-    0%, 100% { left: 22px; transform: rotate(-33deg); }
-    50% { left: -22px; transform: rotate(33deg); }
+    0% { left: 22px; transform: rotate(-33deg); }
+    50% { transform: translateX(-44px) rotate(33deg); }
+    100% { left: 22px; transform: rotate(-33deg); }
 }
 
 @keyframes walk-left-leg {
-    0%, 100% { left: 30px; transform: rotate(-30deg); }
-    50% { left: -30px; transform: rotate(30deg); }
+    0% { left: 30px; transform: rotate(-30deg); }
+    50% { transform: translateX(-60px) rotate(30deg); }
+    100% { left: 30px; transform: rotate(-30deg); }
 }
 
 @keyframes walk-right-leg {
-    0%, 100% { right: 30px; transform: rotate(30deg); }
-    50% { right: -30px; transform: rotate(-30deg); }
+    0% { right: 30px; transform: right(30px) rotate(30deg); }
+    50% { transform: translateX(60px) rotate(-30deg); }
+    100% { right: 30px; transform: rotate(30deg); }
 }
 
 @keyframes walk-right-shoe {
-    0%, 100% { top: 213%; right: 44px; transform: rotate(15deg); }
-    50% { top: 205%; right: -76px; transform: rotate(-15deg); }
+    0% { 
+        top: 213%; 
+        right: 44px; 
+        transform: rotate(15deg); 
+    }
+    50% { 
+        transform: translate(120px, -8%) rotate(-15deg); 
+    }
+    100% { 
+        top: 213%; 
+        right: 44px; 
+        transform: rotate(15deg); 
+    }
 }
 
 @keyframes walk-left-shoe {
-    0%, 100% { top: 209%; left: 58px; transform: rotate(-15deg); }
-    50% { top: 201%; left: -60px; transform: rotate(15deg); }
+    0% { 
+        top: 209%; 
+        left: 58px; 
+        transform: rotate(-15deg); 
+    }
+    50% { 
+        transform: translate(-118px, -8%) rotate(15deg); 
+    }
+    100% { 
+        top: 209%; 
+        left: 58px; 
+        transform: rotate(-15deg); 
+    }
 }
 
 @keyframes shadow {
-    0%, 100%, 66% { right: -40px; width: 200px; }
-    33% { right: -30px; width: 180px; }
+    0% { right: -40px; transform: scaleX(1); }
+    33% { transform: translateX(10px) scaleX(0.9); }
+    100% { right: -40px; transform: scaleX(1); }
 }
 
 .tread-move {
@@ -693,9 +724,13 @@ body {
 }
 
 @keyframes left-gradient {
-    0% { background-position: 0 0; }
-    100% { background-position: 100% 0; }
-}
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 100% 0;
+    }
+  }
 
 .grain-texture {
     z-index: 2;
@@ -711,9 +746,13 @@ body {
 }
 
 @keyframes moveLeft {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
-}
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+  }
 
 .remote-container {
     position: fixed;
@@ -870,9 +909,14 @@ body {
 }
 
 @keyframes instructionsTyping {
-    from { width: 0; }
-    to { width: 100%; }
+    from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
 }
+
 
 .question-container {
     position: fixed;
@@ -918,10 +962,13 @@ body {
     animation: typing 5s linear forwards;
 }
 
-
 @keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
+    from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
 }
 
 .answer-container {
@@ -978,6 +1025,7 @@ body {
     font-style: normal;
     cursor: pointer;
 }
+
 
 @media (max-width: 768px) {
   body {
