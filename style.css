@@ -619,59 +619,58 @@ body {
 
 
 @keyframes head {
-    0%, 100% { top: 0; transform: rotate(0deg) translate3d(0,0,0); -webkit-transform: rotate(0deg); }
-    50% { top: 5px; transform: rotate(3.5deg); -webkit-transform: rotate(3.5deg); }
+    0%, 100% { top: 0px; transform: rotate(0deg) translateZ(0); }
+    50% { top: 5px; transform: rotate(3.5deg) translateZ(0); }
 }
 
 @keyframes hood {
-    0%, 100% { top: 70%; left: 117%; transform: translate(-50%, -50%) rotate(0deg); -webkit-transform: translate(-50%, -50%) rotate(0deg); }
-    50% { top: 77%; left: 117.5%; transform: translate(-50%, -50%) rotate(3deg); -webkit-transform: translate(-50%, -50%) rotate(3deg); }
+    0%, 100% { top: 70%; left: 117%; transform: translate(-50%, -50%) rotate(0deg) translateZ(0); }
+    50% { top: 77%; left: 117.5%; transform: translate(-50%, -50%) rotate(3deg) translateZ(0); }
 }
 
 @keyframes hoodie-body {
-    0%, 100% { top: 55%; left: 50%; transform: translate(-50%, -50%) rotate(0deg); -webkit-transform: translate(-50%, -50%) rotate(0deg); }
-    50% { top: 60%; left: 50%; transform: translate(-50%, -50%) rotate(1.5deg); -webkit-transform: translate(-50%, -50%) rotate(1.5deg); }
+    0%, 100% { top: 55%; left: 50%; transform: translate(-50%, -50%) rotate(0deg) translateZ(0); }
+    50% { top: 60%; left: 50%; transform: translate(-50%, -50%) rotate(1.5deg) translateZ(0); }
 }
 
 @keyframes hair {
-    0%, 100% { top: 3%; transform: rotate(15deg); -webkit-transform: rotate(15deg); }
-    50% { top: 7%; transform: rotate(23deg); -webkit-transform: rotate(23deg); }
+    0%, 100% { top: 3%; transform: rotate(15deg) translateZ(0); }
+    50% { top: 7%; transform: rotate(23deg) translateZ(0); }
 }
 
 @keyframes walk-left-arm {
-    0%, 100% { transform: rotate(33deg); -webkit-transform: rotate(33deg); right: 22px; }
-    50% { transform: rotate(-33deg); -webkit-transform: rotate(-33deg); right: -22px; }
+    0%, 100% { right: 22px; transform: rotate(33deg) translateZ(0); backface-visibility: hidden; }
+    50% { right: -22px; transform: rotate(-33deg) translateZ(0); backface-visibility: hidden; }
 }
 
 @keyframes walk-right-arm {
-    0%, 100% { transform: rotate(-33deg); -webkit-transform: rotate(-33deg); left: 22px; }
-    50% { transform: rotate(33deg); -webkit-transform: rotate(33deg); left: -22px; }
+    0%, 100% { left: 22px; transform: rotate(-33deg) translateZ(0); backface-visibility: hidden; }
+    50% { left: -22px; transform: rotate(33deg) translateZ(0); backface-visibility: hidden; }
 }
 
 @keyframes walk-left-leg {
-    0%, 100% { transform: rotate(-30deg); -webkit-transform: rotate(-30deg); left: 30px; }
-    50% { transform: rotate(30deg); -webkit-transform: rotate(30deg); left: -30px; }
+    0%, 100% { left: 30px; transform: rotate(-30deg) translateZ(0); backface-visibility: hidden; }
+    50% { left: -30px; transform: rotate(30deg) translateZ(0); backface-visibility: hidden; }
 }
 
 @keyframes walk-right-leg {
-    0%, 100% { transform: rotate(30deg); -webkit-transform: rotate(30deg); right: 30px; }
-    50% { transform: rotate(-30deg); -webkit-transform: rotate(-30deg); right: -30px; }
+    0%, 100% { right: 30px; transform: rotate(30deg) translateZ(0); backface-visibility: hidden; }
+    50% { right: -30px; transform: rotate(-30deg) translateZ(0); backface-visibility: hidden; }
 }
 
 @keyframes walk-right-shoe {
-    0%, 100% { top: 213%; transform: rotate(15deg); -webkit-transform: rotate(15deg); right: 44px; }
-    50% { top: 205%; transform: rotate(-15deg); -webkit-transform: rotate(-15deg); right: -76px; }
+    0%, 100% { top: 213%; right: 44px; transform: rotate(15deg) translateZ(0); backface-visibility: hidden; }
+    50% { top: 205%; right: -76px; transform: rotate(-15deg) translateZ(0); backface-visibility: hidden; }
 }
 
 @keyframes walk-left-shoe {
-    0%, 100% { top: 209%; transform: rotate(-15deg); -webkit-transform: rotate(-15deg); left: 58px; }
-    50% { top: 201%; transform: rotate(15deg); -webkit-transform: rotate(15deg); left: -60px; }
+    0%, 100% { top: 209%; left: 58px; transform: rotate(-15deg) translateZ(0); backface-visibility: hidden; }
+    50% { top: 201%; left: -60px; transform: rotate(15deg) translateZ(0); backface-visibility: hidden; }
 }
 
 @keyframes shadow {
-    0%, 100%, 66% { right: -40px; width: 200px; }
-    33% { right: -30px; width: 180px; }
-
+    0%, 100%, 66% { right: -40px; width: 200px; transform: translateZ(0); }
+    33% { right: -30px; width: 180px; transform: translateZ(0); }
 }
 
 .tread-move {
