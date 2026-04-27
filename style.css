@@ -1027,7 +1027,7 @@ body {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   body {
     transform: scale(0.5);
     transform-origin: center;               
